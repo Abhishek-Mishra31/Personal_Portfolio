@@ -18,30 +18,31 @@ body {
     animation: slideright 1s ease forwards;
 }
 
-#nav {
-    display: flex;
-    width: 100%;
+.nav ul {
+    text-decoration: none;
+    padding: 30px;
 }
 
-
-#nav ul {
+.nav ul a {
     text-decoration: none;
-    margin: auto;
-}
-
-#nav ul a {
-    text-decoration: none;
-    color: whitesmoke;
+    color: linen;
     font-size: 1.3rem;
-    margin: 30px;
-    font-family: monospace;
+    font-family: math;
     transition: .3s;
     animation: slideTop .5s ease forwards;
 }
 
-#nav ul a:hover {
+.nav ul a:hover {
     color: rgb(82, 11, 248);
     border-bottom: 2px solid rgb(185, 9, 97);
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
 }
 
 
@@ -59,6 +60,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    margin-top: 100px;
 }
 
 #section01 {
@@ -191,7 +193,7 @@ body {
 .project {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 1s;
@@ -210,7 +212,7 @@ body {
 }
 
 .info p {
-    color:#07374a;
+    color: #07374a;
     font-family: cursive;
 }
 
@@ -274,10 +276,12 @@ body {
 
 /* Media Queries */
 
+
 @media screen and (max-width: 500px) {
 
     #main-box {
         height: 2065px;
+        width: fit-content;
     }
 
     #section01 {
@@ -317,23 +321,6 @@ body {
         font-size: 16px;
     }
 
-    .project {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
-    }
-
-    #section04 {
-        display: flex;
-        background-color: #5fafaf;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-    }
-
-
 }
 
 
@@ -346,6 +333,7 @@ body {
     .contact .mail {
         font-size: 15px;
     }
+
 
 }
 

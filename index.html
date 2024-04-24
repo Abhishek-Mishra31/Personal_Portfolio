@@ -19,17 +19,40 @@
             <div id="logo">
                 <h2>PORTFOLIO</h2>
             </div>
-            <nav id="nav">
-                <ul>
-                    <a href="#section01">About</a>
-                    <a href="#section02">Skills</a>
-                    <a href="#section04">Projects</a>
-                    <a href="#section03">Contact</a>
-                </ul>
+
+            <nav class="navbar navbar-expand-lg bg" style="width: 100%;">
+                <div class=" container-fluid" style="display: flex; flex-direction: column; align-items: flex-end;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="nav">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section01">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#section02">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#section04">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/docs/Resume.pdf" target="_blank">My_Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#section03">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
 
-        <div class="home-content my-5">
+        <div class="home-content">
             <h4>Hey,It's Me</h4>
             <h1>"Abhishek Mishra"</h1>
             <h3>And I'm <span class="Multiple-Text"></span></h3>
@@ -129,87 +152,128 @@
                 <hr>
             </div>
         </div>
-
         <div class="section" id="section04">
             <h2>Projects</h2>
 
-            <div class="project my-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/my_notebook.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My_Notebook</h5>
-                        <p class="card-text">The notes app is a user-friendly application designed to store and organize
-                            notes efficiently by leveraging the power of databases.
-                            <hr>
-                            <strong><u>Skills Used :- </strong></u> <i> ReactJs , Express-Js , JWT , MongoDB , API </i>
-                        </p>
-                        <div class="button">
-                            <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
-                                class="btn btn-dark ">View
-                                Repo</a>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active">
+                        <div class="project my-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/img/my_notebook.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">My_Notebook</h5>
+                                    <p class="card-text">The notes app is a user-friendly application designed to store
+                                        and organize
+                                        notes efficiently by leveraging the power of databases.
+                                        <hr>
+                                        <strong><u>Skills Used :- </strong></u> <i> ReactJs , Express-Js , JWT , MongoDB
+                                            , API </i>
+                                    </p>
+                                    <div class="button">
+                                        <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
+                                            class="btn btn-dark ">View
+                                            Repo</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card my-2" style="width: 18rem;">
-                    <img src="/img/news_app.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">News_App</h5>
-                        <p class="card-text"> A news app utilizing APIs offers users real-time access to diverse news
-                            sources. By leveraging Application Programming Interfaces (APIs).
-                            <hr>
-                            <strong><u>Skills Used :- </strong></u> <i> ReactJs , API , CSS , JAVASCRIPT </i>
-                        </p>
-                        <div class="button">
-                            <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
-                                class="btn btn-dark">View
-                                Repo</a>
+
+                    <div class="carousel-item">
+                        <div class="project my-4">
+                            <div class="card my-2" style="width: 18rem;">
+                                <img src="/img/news_app.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">News_App</h5>
+                                    <p class="card-text"> A news app utilizing APIs offers users real-time access to
+                                        diverse news
+                                        sources. By leveraging Application Programming Interfaces (APIs).
+                                        <hr>
+                                        <strong><u>Skills Used :- </strong></u> <i> ReactJs , API , CSS , JAVASCRIPT
+                                        </i>
+                                    </p>
+                                    <div class="button">
+                                        <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
+                                            class="btn btn-dark">View
+                                            Repo</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/cheatsheet_app.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CheatSheet_App</h5>
-                        <p class="card-text">A cheatsheet app is a tool designed to provide quick reference guides or
-                            summaries of information on a particular topic. These apps are commonly used in various
-                            fields.
-                            <hr>
-                            <strong><u>Skills Used :- </strong></u> <i> HTML , CSS , Javascript , PRISM.JS</i>
-                        </p>
-                        <div class="button">
-                            <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
-                                class="btn btn-dark">View
-                                Repo</a>
+                    <div class="carousel-item">
+                        <div class="project my-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/img/cheatsheet_app.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">CheatSheet_App</h5>
+                                    <p class="card-text">A cheatsheet app is a tool designed to provide quick reference
+                                        guides or
+                                        summaries of information on a particular topic. These apps are commonly used in
+                                        various
+                                        fields.
+                                        <hr>
+                                        <strong><u>Skills Used :- </strong></u> <i> HTML , CSS , Javascript ,
+                                            PRISM.JS</i>
+                                    </p>
+                                    <div class="button">
+                                        <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
+                                            class="btn btn-dark">View
+                                            Repo</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card my-2" style="width: 18rem;">
-                    <img src="/img/weather_app.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Weather_App</h5>
-                        <p class="card-text">
-                            A real-time updating weather app is web application that provides constantly refreshed and
-                            accurate weather information. It delivers real-time updates on current weather conditions
-                            <hr>
-                            <strong><u>Skills Used :- </strong></u> <i> HTML , CSS , Javascript , API</i>
-                        </p>
-                        <div class="button">
-                            <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
-                                class="btn btn-dark">View
-                                Repo</a>
+
+                    <div class="carousel-item">
+                        <div class="project my-4">
+                            <div class="card my-2" style="width: 18rem;">
+                                <img src="/img/weather_app.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather_App</h5>
+                                    <p class="card-text">
+                                        A real-time updating weather app is web application that provides constantly
+                                        refreshed and
+                                        accurate weather information. It delivers real-time updates on current weather
+                                        conditions
+                                        <hr>
+                                        <strong><u>Skills Used :- </strong></u> <i> HTML , CSS , Javascript , API</i>
+                                    </p>
+                                    <div class="button">
+                                        <a href="https://github.com/Abhishek-Mishra31?tab=repositories" target="_blank"
+                                            class="btn btn-dark">View
+                                            Repo</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div class="info">
                 <p> More Projects Are Available On Github..</p>
             </div>
             <hr>
         </div>
+
 
         <div class="section" id="section03">
             <h2>Contact Me</h2>
@@ -238,7 +302,8 @@
                         <script src="/portfolio.js"></script>
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
                             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                            crossorigin="anonymous"></script>
+                            crossorigin="anonymous">
+                            </script>
 
 </body>
 
