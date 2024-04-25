@@ -11,9 +11,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,34 +25,32 @@
                 <h2>PORTFOLIO</h2>
             </div>
 
-            <nav class="navbar navbar-expand-lg bg">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid" style="display: flex; flex-direction: column; align-items: flex-end;">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" data-bs-toggle="collapse"
-                        data-bs-target=".navbar-collapse">
-                        <div class="nav">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#section01">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#section02">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#section04">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="/docs/Resume.pdf" target="_blank">My_Resume</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#section03">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section01">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section02">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#section04">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/docs/Resume.pdf" target="_blank">My_Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#section03">Contact</a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </nav>
@@ -302,7 +302,8 @@
                             class='bx bxl-linkedin-square'></i></a>
                 </div>
             </div>
-            <script src=" https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+                        <script src=" https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
                         <script src="/portfolio.js"></script
 
 </body>

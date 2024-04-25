@@ -18,22 +18,17 @@ body {
     animation: slideright 1s ease forwards;
 }
 
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 
 .navbar {
     width: 100%;
 }
 
-.nav ul {
+.navbar-nav {
     text-decoration: none;
     padding: 30px;
 }
 
-.nav ul a {
+.navbar-nav a {
     text-decoration: none;
     color: linen;
     font-size: 1.3rem;
@@ -42,16 +37,15 @@ body {
     animation: slideTop .5s ease forwards;
 }
 
-.nav ul a:hover {
+.navbar-nav a:hover {
     color: rgb(82, 11, 248);
     border-bottom: 2px solid rgb(185, 9, 97);
 }
 
 .navbar-collapse {
     position: absolute;
-    top: 20%;
+    top: 60%;
     right: 0;
-    z-index: 1000;
     background: transparent;
 }
 
@@ -292,6 +286,15 @@ body {
     #main-box {
         height: 2065px;
         width: fit-content;
+    }
+
+    .navbar-nav a {
+        text-decoration: none;
+        color: linen;
+        font-size: 1rem;
+        font-family: math;
+        transition: .3s;
+        animation: slideTop .5s ease forwards;
     }
 
     #section01 {
